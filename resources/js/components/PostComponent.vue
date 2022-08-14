@@ -2,7 +2,7 @@
     <!--    <div>POST COMPONENT</div>-->
     <div>
         <CreateComponent></CreateComponent>
-        <IndexComponent></IndexComponent>
+        <IndexComponent ref="index"></IndexComponent>
 <!--        <table class="table">-->
 <!--            <thead>-->
 <!--            <tr>-->
@@ -42,7 +42,9 @@ export default {
 
     },
     methods: {
-
+        parentLog(){
+            console.log('This is parent Post Component');
+        }
     },
 
     components: {
